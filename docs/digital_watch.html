@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Digital Watch</title>
+	<link rel="stylesheet" href="../public/css/watch.css">
+</head>
+
+<body>
+	<a href="../index.html">Home</a>
+	<div class="container">
+			<div id="days">
+			</div>
+			<div id="MyClockDisplay" class="clock">
+			</div>
+			<div id="today">
+			</div>
+			<div id="alarm-icon" style="cursor:pointer">
+				<i class="fa-regular fa-bell"></i>
+			</div>
+			<div id="alarm">
+				<form onsubmit="event.preventDefault();">
+					<select name="alarm-h" id="alarm-h">
+						<option value="">Hour</option>
+					</select>
+					<select name="alarm-m" id="alarm-m">
+						<option value="">Minute</option>
+					</select>
+					<select name="alarm-session" id="alarm-session">
+						<option value="">AM/PM</option>
+						<option value="AM">AM</option>
+						<option value="PM">PM</option>
+					</select>
+					<br>
+					<input id="set-alarm" type="submit" value="Set Alarm">
+					<input id="reset-alarm" type="reset" value="Clear Alarm">
+				</form>
+				<audio id="myAudio">
+					<source src="../public/audio/alarm.wav" type="audio/wav">
+				  </audio>
+			</div>
+	</div>
+
+
+	<script src="../public/js/all.min.js"></script>
+	<script src="../public/js/watch.js"></script>
+</body>
+
+</html>

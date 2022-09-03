@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(22, 20, 20);
+}
+
+.container {
+    margin: 50px auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    background-color: bisque;
+    padding: 25px;
+}
+
+div a {
+    display: inline-block;
+    text-decoration: none;
+    color: brown;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+div a:hover {
+    background-color: rgb(22, 20, 20);
+    color: bisque;
+}
